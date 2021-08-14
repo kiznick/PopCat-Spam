@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 app = async () => {
     const delay = ms => new Promise(res => setTimeout(res, ms));
     const browser = await puppeteer.launch({
-        headless: true,
+        headless: false,
         args: [
             '--incognito',
         ]
@@ -14,9 +14,10 @@ app = async () => {
     i = 0;
     while(true) {
         i++;
+        await page.deleteCookie({"name": "bot"})
         await page.click('[id="app"]');
         console.log(`Click : ${i}`);
-        if (i % 800 === 0) {
+        if (i % 799 === 0) {
             console.log('Wait 5 Sec.')
             await delay(5000);
         }
