@@ -18,8 +18,8 @@ app = async () => {
         await page.click('[id="app"]');
         console.log(`Click : ${i}`);
         if (i % 799 === 0) {
-            console.log('Wait 5 Sec.')
-            await delay(5000);
+            console.log('Wait 6 Sec.')
+            await delay(6000);
         }
     }
 }
