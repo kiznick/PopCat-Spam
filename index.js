@@ -2,7 +2,7 @@ const puppeteer = require('puppeteer');
 app = async () => {
     const delay = ms => new Promise(res => setTimeout(res, ms));
     const browser = await puppeteer.launch({
-        headless: false,
+        headless: true,
         args: [
             '--incognito',
         ]
