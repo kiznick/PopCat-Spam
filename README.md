@@ -5,6 +5,8 @@ Installation
 ```bash
 npm i
 ```
-3) node index
-
+3) Run
+```bash
+node index
+```
 Have fun.
