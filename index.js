@@ -14,7 +14,7 @@ app = async () => {
     i = 0;
     while(true) {
         i++;
-        await page.deleteCookie({"name": "bot"})
+        await page.deleteCookie({"name": "ban"})
         await page.click('[id="app"]');
         console.log(`Click : ${i}`);
         if (i % 799 === 0) {
